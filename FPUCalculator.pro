@@ -24,10 +24,12 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        fpucalculator.cpp
+        fpucalculator.cpp \
+    ieee32bitconverter.cpp
 
 HEADERS += \
-        fpucalculator.h
+        fpucalculator.h \
+    ieee32bitconverter.h
 
 FORMS += \
         fpucalculator.ui
