@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui widgets
+QT       += core gui widgets serialport
 
 TARGET = FPUCalculator
 TEMPLATE = app
@@ -25,14 +25,20 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         fpucalculator.cpp \
-    ieee32bitconverter.cpp
+    ieee32bitconverter.cpp \
+    settingsdialog.cpp \
+    serialterminal.cpp
 
 HEADERS += \
         fpucalculator.h \
-    ieee32bitconverter.h
+    ieee32bitconverter.h \
+    settingsdialog.h \
+    serialterminal.h
 
 FORMS += \
-        fpucalculator.ui
+        fpucalculator.ui \
+    settingsdialog.ui \
+    serialterminal.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
